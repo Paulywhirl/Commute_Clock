@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Commute_Clock.iml" filepath="$PROJECT_DIR$/Commute_Clock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommuteClock.iml" filepath="$PROJECT_DIR$/CommuteClock.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

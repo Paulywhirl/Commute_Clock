@@ -1,7 +1,6 @@
 package hackwestern3.commuteclock;
 
 import android.content.Context;
-import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -16,8 +15,6 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-
-import java.util.Map;
 
 
 public class MapsActivity extends AppCompatActivity implements OnMapReadyCallback {
@@ -67,10 +64,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         if (id == R.id.exit_on_tap) {
             finish();
             return true;
-        }
-        else if (id == R.id.settings) {
-            Intent settings = new Intent(MapsActivity.this, settings.class);
-            MapsActivity.this.startActivity(settings);
         }
 
         return super.onOptionsItemSelected(item);
