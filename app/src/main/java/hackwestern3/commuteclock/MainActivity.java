@@ -8,15 +8,23 @@ package hackwestern3.commuteclock;
 import android.app.Activity;
 import android.app.DialogFragment;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.content.Intent;
+import android.view.View;
 
-public class MainActivity extends Activity {
+public class MainActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+    }
+
+    public void sendMessageR(View view) {
+        Intent intent = new Intent(this, MapsActivity.class);
+        startActivity(intent);
     }
 
     @Override
@@ -30,11 +38,13 @@ public class MainActivity extends Activity {
 
         int id = item.getItemId();
 
-        if (id == R.id.exit_on_tap) {
-            finish();
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
+    if (id == R.id.exit_on_tap) {
+        finish();
+        return true;
     }
+
+    return super.onOptionsItemSelected(item);
+}
+
+
 }
